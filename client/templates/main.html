@@ -1,0 +1,294 @@
+	<!--HOME-->
+		<section id = "home">
+			<div class = home-content>
+				<div class = "container text-center">
+					<div class = "row">
+						<div class = "col-lg-12">
+							<h1>WE MAKE WEBSITES</h1>
+							<a ng-click="gotoElement('portfolio')" href = "#portfolio"><input type="button" value = "START TOUR"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	<!--SERVICES-->
+		<section id = "services" ng-controller = "tabsCtrl" ng-switch="tabName">
+			<div class = "container">
+				<div class = "row">
+					<div class = "text-center services-wraper">
+						<div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<a ng-class="{'active': tabName=='tab1'}" ng-click="tabName='tab1'">
+							<span class="fa fa-5x"><img src="img/Icon1.png" class="img-responsive"></img></span>
+                            <h4 class="service-icon-header">WEB DESIGN</h4>
+                            </a>
+                            <div class = "tabs1" ng-switch-when="tab1"></div>
+						</div>
+						<div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<a ng-class="{'active': tabName=='tab2'}" ng-click="tabName='tab2'">
+							<span class="fa fa-5x"><img src="img/Icon2.png" class="img-responsive"></img></span>
+                            <h4 class="service-icon-header">GRAPHIC DESIGN</h4>
+                            </a>
+                            <div class = "tabs1" ng-switch-when="tab2"></div>
+						</div>
+						<div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<a ng-class="{'active': tabName=='tab3'}" ng-click="tabName='tab3'">
+							<span class="fa fa-5x"><img src="img/Icon3.png" class="img-responsive"></img></span>
+                            <h4 class="service-icon-header">PROGRAMMING</h4>
+                            </a>
+                            <div class = "tabs2" ng-switch-when="tab3"></div>
+						</div>
+						<div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<a ng-class="{'active': tabName=='tab4'}" ng-click="tabName='tab4'">
+							<span class="fa fa-5x"><img src="img/Icon4.png" class="img-responsive"></img></span>
+                            <h4 class="service-icon-header">PHOTOGRAPHY</h4>
+                            </a>
+                            <div class = "tabs2" ng-switch-when="tab4"></div>
+						</div>
+					</div>
+				</div>
+				<div class = "row">
+					<div class="col-lg-8 col-lg-offset-2 service-text" ng-switch-when="tab1">
+						<hr class="section-heading-spacer1">
+                       <p>
+                        	Cum sociis natoque penatibus et magnis dis 
+                        parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. sociis natoque penatibus et 
+                        magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper 
+                        nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio 
+                        sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+                       </p>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2 service-text" ng-switch-when="tab2">
+                    	<hr class="section-heading-spacer2">
+                       <p>
+                        	Quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis 
+                        parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. sociis natoque penatibus et 
+                        magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper 
+                        nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio 
+                        sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+                       </p>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2 service-text" ng-switch-when="tab3">
+                    	<hr class="section-heading-spacer3">
+                       <p>
+                         	Urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis 
+                        parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. sociis natoque penatibus et 
+                        magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper 
+                        nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio 
+                        sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+                       </p>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2 service-text" ng-switch-when="tab4">
+                    	<hr class="section-heading-spacer4">
+                       <p>
+                        	Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis 
+                        parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. sociis natoque penatibus et 
+                        magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper 
+                        nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio 
+                        sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+                       </p>
+                    </div>
+				</div>
+			</div>
+		</section>
+		
+	<!--FULLY RESPONSIVE-->
+		<section id="responsive">
+			<div class = "container">
+				<div class "row">
+					<div class = "text-center responsive-menu">
+						<input type="button" value = "START TOUR"/>
+						<input type="button" value = "FOR ALL DEVICES"/>
+					</div>
+				</div>
+				<div class = "col-lg-6">
+					<img src="img/phones.png" class = "img-responsive"></img>
+				</div>
+				<div class = "col-lg-6">
+					<h1>Fully Responsive</h1>
+					<p>
+                        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis 
+                        parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. sociis natoque penatibus et 
+                        magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper 
+                        nulla non metus auctor fringilla.
+                    </p>
+                    <a ng-click="gotoElement('contact')" href = "#contact"><input type="button" class = "responsive-btn" value = "GET NOW"/></a>
+				</div>
+			</div>
+		</section>
+		
+		<!--OUR PORTFOLIO-->
+		<section id = "portfolio" ng-controller="portfolioCtrl">
+			<div class = "container">
+				<div class = "row">
+					<div class="col-lg-12 text-center">
+                         <h1>Our Portfolio</h1>
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
+	                    <div class="col-lg-10 col-lg-offset-1">
+	                    	<p>
+	                        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis 
+	                        parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. sociis natoque penatibus et 
+	                        magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper 
+	                        nulla non metus auctor fringilla.
+	                    </p>
+	                    </div>
+	                    <div class="col-lg-10 col-lg-offset-1 text-center">
+	                        <ul class = "list-inline portfolio-filter">
+	                            <li><a ng-click="selected='all'">ALL</a></li>
+	                            <li><a ng-click="selected='WEB'">WEB</a></li>
+	                            <li><a ng-click="selected='PHOTOGRAPHY'">PHOTOGRAPHY</a></li>
+	                            <li><a ng-click="selected='GRAPHIC DESIGN'">GRAPHIC DESIGN</a></li>
+	                        </ul>
+                    	</div>
+                    </div>
+				</div>
+			</div>
+			<div class = "portfolio-images">
+                    	<ul class="full-portfolio clearfix" id="Grid">
+                	    <li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item" ng-repeat = "photo in photos | portFilter:this">
+                	        <a class = "image-link">
+                	            <img src={{photo.src}} class="img-responsive">
+                	            <div class="image-cover"></div>
+                	            <h4 class = "cover-title">SAMPLE IMAGE</h4>
+                                <p class="cover-text">{{photo.cover}}</p>
+                	        </a>
+                	    </li>
+                	</ul>
+                   </div>
+		</section>
+		
+		<!--COUNTERS-->
+		<section id = "counters" >
+			<div class = "container">
+				<div class = "row text-center">
+					<counter-dir ng-click = "startCount()"></counter-dir>
+				</div>
+			</div>
+		</section>
+		
+		<!--TEAM-->
+		<section id = "team" ng-controller = "teamCtrl">
+			<div class = "container">
+				<div class = "row">
+					<div class="col-lg-12 text-center">
+                         <h1>We are the one</h1>
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
+	                    <div class="col-lg-10 col-lg-offset-1">
+	                    	<p>
+	                        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis 
+	                        parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+	                    </p>
+	                    </div>
+	                    <div class = "team-members">
+	                    	<div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12" ng-repeat = "member in team">
+	                    		<div class = "member-photo">
+		                    		<img src={{member.img}} class="img-responsive">
+		                    		<div class = "member-name">
+		                    			<h5>{{member.name}}</h5>
+		                    			<p>{{member.position}}</p>
+		                    		</div>
+		                    	</div>
+	                    		<div class = "member-social-links">
+	                    			<p>{{member.text}}</p>
+	                    			<ul>
+	                    				<li class = "facebook"><a href = "#"><span class="fa-lg"><i class="fa fa-facebook"></i></span></a></li>
+	                    				<li class = "twitter"><a href = "#"><span class="fa-lg"><i class="fa fa-twitter"></i></span></a></li>
+	                    				<li class = "google"><a href = "#"><span class="fa-lg"><i class="fa fa-google-plus"></i></span></a></li>
+	                    				<li class = "dribbble"><a href = "#"><span class="fa-lg"><i class="fa fa-dribbble"></i></span></a></li>
+	                    			</ul>
+	                    		</div>
+	                    	</div>
+	                    </div>
+	            	</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--NEWS-->
+		<section id = "news">
+			<div class = "container">
+				<div class = "row text-center">
+					<div class="col-lg-10 col-lg-offset-1">
+						<h1>Check our news</h1>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p>
+	                        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis 
+	                        parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+	                    </p>
+					</div>
+				</div>
+				<div class = "row" ng-controller = "newsCtrl" ng-init="getItems()">
+					<div class = "col-lg-10 col-lg-offset-1 news-wraper">
+						<table>
+							<tr ng-repeat = "news in getNews" id = {{news.id}}>
+								<td class = "date text-center">
+									<span><h1>{{news.date.split('/')[1]}}<h1></span>
+									<h5 ng-bind = "month[+news.date.split('/')[0]-1]"></h5>
+								</td>
+								<td class = "news-text">{{news.text}}<span><a href = "#/{{news.id}}">Read more</a></span></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--CONTACT US-->
+		<section id = "contact">
+			<div class = "container">
+				<div class = "row">
+					<div class="col-lg-10 col-lg-offset-1 text-center">
+						<h1>Contact Us</h1>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <p>
+	                       Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis 
+	                       parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+	                    </p>
+	                </div>
+	                    <div class = "contact-form">
+	                    	<form ng-controller = "formCtrl" name="userForm" novalidate>
+	                    		<div class="col-lg-10 col-lg-offset-2  form">
+		                    		<div class = "col-lg-5 form-group" ng-class="{ 'has-error' : submitted && userForm.name.$invalid && !userForm.name.$pristine }">
+			                    		<input type="text" class="form-control" placeholder="Your Name Here" id="name" name="name"  ng-model="user.name" ng-pattern="nameRegex" required/>
+			                    		<p class="help-block text-danger" ng-show="submitted && userForm.name.$invalid && !userForm.name.$pristine">Use only english characters</p>
+		                    		</div>
+		                    		<div class = "col-lg-5 form-group" ng-class="{ 'has-error' : submitted && userForm.email.$invalid && !userForm.email.$pristine }">
+			                    		<input type="text" class="form-control" placeholder="Your Mail Here" id="mail" name="email" ng-model="user.email"  ng-pattern="mailRegex" required/>
+			                    		<p class="help-block text-danger" ng-show="submitted && userForm.email.$invalid && !userForm.email.$pristine">Use only english characters, numbers, "@", "_", "."</p>
+		                    		</div>
+		                    		<div class = "col-lg-10 form-group" ng-class="{ 'has-error' : submitted && userForm.message.$invalid && !userForm.message.$pristine }">
+		                    			<textarea class="form-control" placeholder="Enter Message Here" id="message" name = "message" ng-model = "user.message" ng-pattern="messageRegex"  required></textarea>
+                                        <p class="help-block text-danger" ng-show="submitted && userForm.message.$invalid && !userForm.message.$pristine">Message less than 20 characters </p>
+                                        <div class="clearfix"></div>
+                                        <div id="success"></div>
+                                    	<button type="submit" class="contact-form-btn" ng-click="submitted=true">Send Message</button>
+		                    		</div>
+	                    		</div>
+	                    	</form>
+	                    </div>
+				</div>
+			</div>
+		</section>
+		
+		<!--ADDRESS-->
+		<section id = "address">
+			<div class = "container">
+				<div class = "row text-center">
+					<div class = "col-lg-4 col-lg-offset-4">
+						<div class = "location">
+							<div>
+								<span>Awesome Address</span>
+								<span>ourmail@sometype.com</span>
+								<span>+321(0)32 123 343 492</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--FOOTER-->
