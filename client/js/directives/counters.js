@@ -2,9 +2,9 @@ angular.module("myApp").directive('counterDir', function () {
             return {
                 restrict: 'E',
                 templateUrl: 'templates/counters.html',
-               
                 
-                controller: function ($scope, $interval, $timeout) {
+                
+                controller: function ($scope, $interval, $timeout,  $document) {
                     $scope.countersArr=[
                     	{text:"COMPLETED PROJECTS", count: 4, src: "img/count1.png"},
                     	{text:"CLICK PRESED", count: 0, src: "img/count2.png"},
@@ -66,7 +66,8 @@ angular.module("myApp").directive('counterDir', function () {
                             $interval.cancel(inview);
                     }
                 }, 5)
-                }
+                
+            }
             }
 });   
                     

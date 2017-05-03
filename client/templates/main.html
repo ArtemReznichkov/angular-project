@@ -148,7 +148,7 @@
                     	<ul class="full-portfolio clearfix" id="Grid">
                 	    <li class="col-xs-6 col-sm-4 col-md-3 col-lg-2 portfolio-item" ng-repeat = "photo in photos | portFilter:this">
                 	        <a class = "image-link">
-                	            <img src={{photo.src}} class="img-responsive">
+                	            <img ng-src={{photo.src}} class="img-responsive">
                 	            <div class="image-cover"></div>
                 	            <h4 class = "cover-title">SAMPLE IMAGE</h4>
                                 <p class="cover-text">{{photo.cover}}</p>
@@ -184,7 +184,7 @@
 	                    <div class = "team-members">
 	                    	<div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12" ng-repeat = "member in team">
 	                    		<div class = "member-photo">
-		                    		<img src={{member.img}} class="img-responsive">
+		                    		<img ng-src={{member.img}} class="img-responsive">
 		                    		<div class = "member-name">
 		                    			<h5>{{member.name}}</h5>
 		                    			<p>{{member.position}}</p>
@@ -220,7 +220,7 @@
 	                    </p>
 					</div>
 				</div>
-				<div class = "row" ng-controller = "newsCtrl" ng-init="getItems()">
+				<div class = "row" ng-controller = "newsCtrl">
 					<div class = "col-lg-10 col-lg-offset-1 news-wraper">
 						<table>
 							<tr ng-repeat = "news in getNews" id = {{news.id}}>
@@ -228,7 +228,7 @@
 									<span><h1>{{news.date.split('/')[1]}}<h1></span>
 									<h5 ng-bind = "month[+news.date.split('/')[0]-1]"></h5>
 								</td>
-								<td class = "news-text">{{news.text}}<span><a href = "#/{{news.id}}">Read more</a></span></td>
+								<td class = "news-text">{{news.text}}<span><a ng-href = "#!/news/{{news.id}}">Read more</a></span></td>
 							</tr>
 						</table>
 					</div>

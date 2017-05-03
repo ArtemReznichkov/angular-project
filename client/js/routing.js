@@ -8,7 +8,7 @@ angular.module("myApp").config(function ($routeProvider) {
             
 
         })
-        .when('/:id', {
+        .when('/news/:id', {
             reloadOnSearch: false,
             templateUrl: 'templates/news.html',
             controller: 'newsCtrl'
