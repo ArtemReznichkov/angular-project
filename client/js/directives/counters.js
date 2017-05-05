@@ -46,26 +46,23 @@ angular.module("myApp").directive('counterDir', function () {
                     },10)
                 }
                 
-                
-                function inWindow(){
-                	var scrollTop = window.pageYOffset;
-                	var windowHeight = document.documentElement.clientHeight;
-                	var el = document.getElementById("counters");
-                	var offSet = el.offsetTop;
-                	if(scrollTop <= offSet && (el.offsetHeight + offSet) < (scrollTop + windowHeight)) {
-                		return el;
-                	}
-                }
-                var el = document.getElementById("counters");
-                var inview = $interval(function(){
-                    if(inWindow() == el){
+              
+                var marker = true
+                  
+                window.onscroll = function(){
+                    if(document.body.scrollTop>=document.getElementById("counters").offsetTop-document.documentElement.clientHeight){
+                        if(marker){
                          $scope.startCount1();
                          $scope.startCount2();
                          $scope.startCount3();
                          $scope.startCount4();
-                            $interval.cancel(inview);
+                            
+                         marker = false;
+                        }
                     }
-                }, 5)
+                }
+                
+             
                 
             }
             }
